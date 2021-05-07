@@ -1,11 +1,13 @@
-import logging 
+import logging
 log = logging.getLogger("util")
-import time 
-from datetime import datetime,timedata
-import copy
-from jinja2 import Template
-from config import DATE_START
 
+import time
+from datetime import datetime, timedelta
+import copy
+
+from jinja2 import Template
+
+from config import DATE_START
 def today():
     return datetime.strptime(datetime.now().strftime("%Y-%m-%d"),"%Y-%m-%d")
 
